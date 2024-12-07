@@ -61,3 +61,8 @@ Thumbs.db
 *.wmv
 *.iml
 
+/compiler.xml
+/jarRepositories.xml
+/misc.xml
+/uiDesigner.xml
+/vcs.xml
