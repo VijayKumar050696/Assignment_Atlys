@@ -42,7 +42,7 @@ public class ApiTest extends BaseTest{
         Response response=requestSpecification.queryParam("q",productName).put();
         log.info(response.prettyPrint());
         Assert.assertEquals(405,response.getStatusCode());
-        System.out.println(response.getStatusCode());
+        System.out.println("Api Status code:- "+response.getStatusCode());
     }
 
     @Test
@@ -51,6 +51,6 @@ public class ApiTest extends BaseTest{
         Response response=requestSpecification.queryParam("q",productName).get();
         log.info(response.prettyPrint());
         Assert.assertEquals(400,response.getStatusCode());
-        System.out.println(response.getStatusCode());
+        System.out.println("Api Status code:- "+response.getStatusCode());
     }
 }

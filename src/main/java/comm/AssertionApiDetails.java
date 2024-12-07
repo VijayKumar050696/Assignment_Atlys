@@ -14,7 +14,7 @@ public class AssertionApiDetails {
     public void assertPositiveResponse(SoftAssertions softAssertions,Response response, ResponsePojo responsePojo, String productName){
         SoftAssert softAssert=new SoftAssert();
         softAssert.assertEquals(response.getStatusCode(), 200);
-
+        System.out.println("Api Status code:- "+response.getStatusCode());
         for(int i=0;i< responsePojo.items.size();i++)
         {
             softAssert.assertEquals(responsePojo.items.get(i).title.contains(productName),true);
