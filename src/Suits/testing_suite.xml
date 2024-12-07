@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Get wedget Api Suite">
+    <test name = "Get wedget Api call">
+        <classes>
+            <class name = "ApiTest">
+                <methods>
+                    <parameter name="apiKey" value="1Q7P8A7s4h"></parameter>
+                    <parameter name="productName" value="shirt"/>
+                    <include name="testGetWidgetsCall"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "Get wedget Api call with wrong method">
+        <classes>
+            <class name = "ApiTest">
+                <methods>
+                    <parameter name="apiKey" value="1Q7P8A7s4h"></parameter>
+                    <parameter name="productName" value="shirt"/>
+                    <include name="WidgetsCallWIthWrongMethod"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "Get wedget Api call with wrong perameter">
+        <classes>
+            <class name = "ApiTest">
+                <methods>
+                    <parameter name="apiKey" value="abcdef"></parameter>
+                    <parameter name="productName" value="invaliddata"/>
+                    <include name="WidgetsCallWIthWrongparameters"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
