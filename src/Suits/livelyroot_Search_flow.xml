@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lively root Search flow">
+
+  <test name="Lively root Home page launch">
+    <classes>
+      <class name="SearchUITest">
+        <methods>
+          <include name="homePageLaunch"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+  <test name="Lively root Search valid product">
+    <classes>
+      <class name="SearchUITest">
+        <methods>
+          <parameter name="productName" value="Plants"></parameter>
+          <include name="searchProduct"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+  <test name="Lively root Search Invalid product">
+    <classes>
+      <class name="SearchUITest">
+        <methods>
+          <parameter name="productName" value="ghghghghghgh"></parameter>
+          <include name="searchInvalidProduct"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+
+
+</suite>
