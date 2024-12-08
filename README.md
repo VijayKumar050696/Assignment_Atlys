@@ -1,8 +1,8 @@
 # Assignment_Atlys
 
 Prerequisites:-
-Java 11
-Maven
+Java 11, 
+Maven, 
 Git
 
 

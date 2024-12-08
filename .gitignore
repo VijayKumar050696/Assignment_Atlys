@@ -62,7 +62,7 @@ Thumbs.db
 *.mov
 *.wmv
 *.iml
-*.png
+#*.png
 
 /compiler.xml
 /jarRepositories.xml
