@@ -3,15 +3,15 @@
 Project Overview
 This repository contains an automated test suite for both API and UI testing. The project is developed using the following technologies and tools:
 
-Programming Language: Java 11
-Build Automation: Maven
-Testing Framework: TestNG
-API Testing Framework: RestAssured
-UI Testing Framework: Selenium WebDriver
+Programming Language: Java 11.
+Build Automation: Maven.
+Testing Framework: TestNG.
+API Testing Framework: RestAssured.
+UI Testing Framework: Selenium WebDriver.
+
 Prerequisites
 Before running the tests, ensure that the following tools and versions are installed:
-
-IntelliJ IDEA (or any Java IDE of your choice)
+IntelliJ IDEA (or any Java IDE of your choice).
 
 Java 11
 Ensure you have JDK 11 installed and properly configured.
