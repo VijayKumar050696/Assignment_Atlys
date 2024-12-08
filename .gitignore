@@ -38,6 +38,7 @@ dist/
 
 # JetBrains IDE
 .idea/
+.gitignore
 
 # Unit test reports
 TEST*.xml
