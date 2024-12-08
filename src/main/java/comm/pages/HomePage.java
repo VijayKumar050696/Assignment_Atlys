@@ -16,7 +16,7 @@ public class HomePage {
 
 	WebDriver driver;
 
-	private final By logo = By.ById.id("svg2");
+	private final By logo = By.xpath("//*[@id=\"svg2\"]");
 	private final By searchField = By.ById.id("search-field");
 	private final By clickButton = By.xpath("//*[@id=\"shopify-section-header\"]/header/section[1]/div/div[1]/form/div/button");
 	private final By invalidProductSearchResult=By.xpath("//span[contains(., 'Your search')]");
@@ -30,6 +30,7 @@ public class HomePage {
 	public void launchPage() throws InterruptedException {
 		driver.get("https://www.livelyroot.com/");
 		Thread.sleep(5000);
+		waitForElementNotVisible(driver,logo);
 		driver.manage().window().maximize();
 		isDisplayed(logo);
 	}
@@ -74,10 +75,6 @@ public class HomePage {
 				}
 			}
 		});
-
-		// Interact with the element once it's clickable
-		element.click();
-		System.out.println("Element clicked.");
 	}
 
 		public void searchFieldClick(String productName) throws InterruptedException {
