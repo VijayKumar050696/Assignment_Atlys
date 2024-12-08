@@ -1,4 +1,4 @@
-package comm.BaseClass;
+package Utils;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.reset;
@@ -7,7 +7,6 @@ import io.restassured.specification.RequestSpecification;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
 
