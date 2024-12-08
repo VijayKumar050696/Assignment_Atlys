@@ -31,7 +31,7 @@ public class ApiTest extends BaseTest{
     @Parameters("productName")
     public void testGetWidgetsCall(String productName) {
         Response response=requestSpecification.queryParam("q",productName).get();
-        log.info(response.prettyPrint());
+        log.info(response.asString());
         responsePojo = response.as(ResponsePojo.class, ObjectMapperType.GSON);
         assertionApiDetails.assertPositiveResponse(softAssert,response,responsePojo,productName);
     }
@@ -40,7 +40,7 @@ public class ApiTest extends BaseTest{
     @Parameters("productName")
     public void WidgetsCallWIthWrongMethod(String productName) {
         Response response=requestSpecification.queryParam("q",productName).put();
-        log.info(response.prettyPrint());
+        log.info(response.asString());
         Assert.assertEquals(405,response.getStatusCode());
         System.out.println("Api Status code:- "+response.getStatusCode());
     }
@@ -49,8 +49,10 @@ public class ApiTest extends BaseTest{
     @Parameters("productName")
     public void WidgetsCallWIthWrongparameters(String productName) {
         Response response=requestSpecification.queryParam("q",productName).get();
-        log.info(response.prettyPrint());
+        log.info(response.asString());
         Assert.assertEquals(400,response.getStatusCode());
         System.out.println("Api Status code:- "+response.getStatusCode());
     }
+
+
 }

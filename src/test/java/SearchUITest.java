@@ -13,10 +13,11 @@ public class SearchUITest extends BaseClass {
 
   @Test
   @Parameters("productName")
-  public void searchProduct(String productName) throws InterruptedException {
+  public void searchValidProduct(String productName) throws InterruptedException {
     HomePage homePage = new HomePage(driver);
     homePage.launchPage();
-    homePage.searchProduct(productName);
+    log.info("Web page is loaded now search for product:- "+productName);
+    homePage.searchValidProduct(productName);
   }
 
   @Test
@@ -24,7 +25,8 @@ public class SearchUITest extends BaseClass {
   public void searchInvalidProduct(String productName) throws InterruptedException {
     HomePage homePage = new HomePage(driver);
     homePage.launchPage();
-    homePage.searchProduct(productName);
+    log.info("Web page is loaded now search for product:- "+productName);
+    homePage.searchInvalidProduct(productName);
 
   }
 

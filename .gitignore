@@ -33,6 +33,7 @@ allure-results/
 
 # Maven
 target/
+test-output/
 dist/
 
 # JetBrains IDE
@@ -60,6 +61,7 @@ Thumbs.db
 *.mov
 *.wmv
 *.iml
+*.png
 
 /compiler.xml
 /jarRepositories.xml

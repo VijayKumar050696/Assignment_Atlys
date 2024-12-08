@@ -18,6 +18,7 @@ public class AssertionApiDetails {
         for(int i=0;i< responsePojo.items.size();i++)
         {
             softAssert.assertEquals(responsePojo.items.get(i).title.contains(productName),true);
+            System.out.println("Product:- "+responsePojo.items.get(i).title+", code:- "+responsePojo.items.get(i).product_code);
         }
 
 

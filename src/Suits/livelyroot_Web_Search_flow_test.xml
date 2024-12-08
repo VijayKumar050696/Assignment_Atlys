@@ -17,7 +17,7 @@
       <class name="SearchUITest">
         <methods>
           <parameter name="productName" value="Plants"></parameter>
-          <include name="searchProduct"/>
+          <include name="searchValidProduct"/>
         </methods>
       </class>
     </classes>
@@ -27,7 +27,7 @@
     <classes>
       <class name="SearchUITest">
         <methods>
-          <parameter name="productName" value="ghghghghghgh"></parameter>
+          <parameter name="productName" value="ghghghghgh"></parameter>
           <include name="searchInvalidProduct"/>
         </methods>
       </class>
